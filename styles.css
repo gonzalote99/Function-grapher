@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #283748;
+  text-align: center;
+  color: #efefef;
+  
+  height: 100%;
+}
+
+input {
+  background-color: #191a1c;
+  border-radius: 5px;
+  color: #efefef;
+  border: none;
+  height: 26px;
+}
+
+input:focus, input:active {
+  border-color: #C48943;
+  outline-color: #C48943;
+}
+
+button {
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+}
+
+

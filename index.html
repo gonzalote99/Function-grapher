@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js">
+        <link rel="stylesheet" href="styles.css">
+        <title>Function grapher</title>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/function-plot/1.23.3/function-plot.js"></script>
+    </head>
+    
+    <body class="row" onload="plot()" >
+        
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="box">
+         <div>
+        <label>enter function</label>
+        <input id="function" type="text" style="width: 70%" value="x" />
+         </div>
+         <br>
+         <div style="text-align: left; float: left;">
+          <label>min_X:</label>
+         <input id="min_X" value="0">
+           <br>
+           <br>
+           <label>min_X:</label>
+           <input id="max_X" value="10">
+         </div>
+         <div style="text-align: right; float: right;">
+            <label>min_Y:</label>
+           <input id="min_Y" value="0">
+             <br>
+             <br>
+             <label>min_Y:</label>
+             <input id="max_Y" value="10">
+           </div>
+           <br>
+           <button onclick="plot()" style="width: 40%">plot</button>
+           <div id="plotter"></div> 
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </body>
+</html>
